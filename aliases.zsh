@@ -9,6 +9,7 @@ alias vup="vagrant up"
 alias vssh="vagrant ssh"
 alias vexit="vagrant halt && exit"
 alias vhalt="vagrant halt"
+alias vreload="vagrant reload --provision"
 
 # git
 alias gpull="git pull $1 $2"
