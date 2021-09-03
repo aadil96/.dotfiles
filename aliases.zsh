@@ -18,3 +18,6 @@ alias gseturl="git remote set-url origin https://$1:$2@github.com/$3/$4"
 alias gaddurl="git remote add-url origin https://$1:$2@github.com/$3/$4"
 alias guser="git config user.name $1"
 alias gemail="git config user.email $1"
+
+# miscellaneous
+alias bright="xrandr --output eDP --brightness $1"
