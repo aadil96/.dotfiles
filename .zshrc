@@ -1,5 +1,6 @@
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
+export WORKDIR=$HOME/Development/acetrot
 export PATH=$PATH:/usr/local/go/bin
 
 # If you come from bash you might have to change your $PATH.
