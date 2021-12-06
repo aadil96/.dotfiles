@@ -14,10 +14,35 @@ alias vreload="vagrant reload --provision"
 # git
 alias gpull="git pull $1 $2"
 alias gpush="git push $1 $2"
-alias gseturl="git remote set-url origin https://$1:$2@github.com/$3/$4"
-alias gaddurl="git remote add-url origin https://$1:$2@github.com/$3/$4"
 alias guser="git config user.name $1"
 alias gemail="git config user.email $1"
+alias gclone="git clone $1"
+alias gs="git status"
 
 # miscellaneous
 alias bright="xrandr --output eDP --brightness $1"
+
+# artisan
+alias pa="php artisan"
+alias punitf="./vendor/bin/phpunit --testsuite Feature"
+alias punitu="./vendor/bin/phpunit --testsuite Unit"
+alias punit="./vendor/bin/phpunit --filter $1"
+
+# docker
+
+alias dcup="docker-compose up -d"
+alias dck="docker"
+alias dckps="docker ps"
+alias dclogs="docker-compose logs"
+alias dcbuild="docker-compose build $1"
+alias dckexec="docker exec -it"
+alias dcdown="docker-compose down"
+alias dckim="docker images"
+
+# php
+
+function php74() {
+    sudo update-alternatives --set php /usr/bin/php7.4
+    sudo update-alternatives --set php-config /usr/bin/php-config7.4
+    sudo update-alternatives --set phpize /usr/bin/phpize7.4
+}

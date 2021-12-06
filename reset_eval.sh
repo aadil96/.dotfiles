@@ -2,6 +2,7 @@
 #!/bin/sh
 # reset jetbrains ide evals
 
+echo "Running: reset PHPStorm eval script"
 OS_NAME=$(uname -s)
 JB_PRODUCTS="IntelliJIdea CLion PhpStorm GoLand PyCharm WebStorm Rider DataGrip RubyMine AppCode"
 
@@ -11,3 +12,5 @@ for PRD in $JB_PRODUCTS; do
 	rm -rf ~/.config/JetBrains/${PRD}*/eval/
 	rm -rf ~/.config/JetBrains/${PRD}*/options/other.xml
 done
+echo "Script finished running"
+
