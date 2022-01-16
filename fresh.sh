@@ -15,3 +15,13 @@ fi
 chsh -s $(which zsh)
 
 source ~/.zshrc
+
+if [ ! -d ~/Development ]
+then 
+	mkdir ~/Development
+fi
+
+if [ ! -d ~/Development/Sites ]
+then 
+	mkdir ~/Development/Sites
+fi

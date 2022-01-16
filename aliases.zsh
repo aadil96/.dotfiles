@@ -1,7 +1,12 @@
-# dir
+# dir on linux
 alias dls="cd ~/Downloads"
 alias hstead="cd ~/Development/Homestead"
 alias dev="cd ~/Development"
+
+# dir on windows
+alias winhome="/mnt/c/Users/agwan"
+alias winroot="/mnt/c"
+alias laragon="/mnt/c/laragon/www"
 
 # vagrant
 alias vussh="cd ~/Development/Homestead && vagrant up && vagrant ssh"
@@ -22,11 +27,12 @@ alias gs="git status"
 # miscellaneous
 alias bright="xrandr --output eDP --brightness $1"
 
-# artisan
+# laravel
 alias pa="php artisan"
 alias punitf="./vendor/bin/phpunit --testsuite Feature"
 alias punitu="./vendor/bin/phpunit --testsuite Unit"
 alias punit="./vendor/bin/phpunit --filter $1"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # docker
 
