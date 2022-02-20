@@ -44,6 +44,14 @@ alias dcbuild="docker-compose build $1"
 alias dckexec="docker exec -it"
 alias dcdown="docker-compose down"
 alias dckim="docker images"
+alias dcknikito="docker run --rm sullo/nikto"
+
+# terraform
+
+alias tf="terraform"
+alias tfa="terraform apply"
+alias tfp="terraform plan"
+alias tfd="terraform destroy"
 
 # php
 
@@ -51,4 +59,29 @@ function php74() {
     sudo update-alternatives --set php /usr/bin/php7.4
     sudo update-alternatives --set php-config /usr/bin/php-config7.4
     sudo update-alternatives --set phpize /usr/bin/phpize7.4
+}
+
+function lampup() {
+	sudo service nginx start
+	sudo service php7.4-fpm start
+	sudo service mysql start
+}
+
+function lamprestart() {
+	sudo service nginx restart
+	sudo service php7.4-fpm restart
+}
+
+function lampdown() {
+	sudo service nginx stop 
+	sudo service php7.4-fpm stop
+	sudo service mysql stop
+}
+
+function sqlup() {
+	sudo service mysql start
+}
+
+function sqldown() {
+	sudo service mysql stop
 }

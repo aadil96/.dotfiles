@@ -4,7 +4,7 @@ export WORKDIR=$HOME/Development/acetrot
 export PATH=$PATH:/usr/local/go/bin
 export PATH="/home/aadil/.local/bin:$PATH"
 export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
-
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
