@@ -2,6 +2,7 @@
 alias dls="cd ~/Downloads"
 alias hstead="cd ~/Development/Homestead"
 alias dev="cd ~/Development"
+alias cr="clear"
 
 # dir on windows
 alias winhome="/mnt/c/Users/agwan"
