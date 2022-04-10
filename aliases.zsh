@@ -30,6 +30,7 @@ alias bright="xrandr --output eDP --brightness $1"
 
 # laravel
 alias pa="php artisan"
+alias sa="sail artisan"
 alias punitf="./vendor/bin/phpunit --testsuite Feature"
 alias punitu="./vendor/bin/phpunit --testsuite Unit"
 alias punit="./vendor/bin/phpunit --filter $1"
@@ -53,6 +54,13 @@ alias tf="terraform"
 alias tfa="terraform apply"
 alias tfp="terraform plan"
 alias tfd="terraform destroy"
+
+# golang
+
+alias g="go"
+alias ginit="go mod init $1"
+alias gtidy="go mod tidy"
+alias gr="go run ."
 
 # php
 
@@ -85,4 +93,16 @@ function sqlup() {
 
 function sqldown() {
 	sudo service mysql stop
+}
+
+function php74() {
+    sudo update-alternatives --set php /usr/bin/php7.4
+#    sudo update-alternatives --set php-config /usr/bin/php-config7.4
+#    sudo update-alternatives --set phpize /usr/bin/phpize7.4
+}
+
+function php80() {
+    sudo update-alternatives --set php /usr/bin/php8.0
+#    sudo update-alternatives --set php-config /usr/bin/php-config8.0
+#    sudo update-alternatives --set phpize /usr/bin/phpize8.0
 }
