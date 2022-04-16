@@ -1,4 +1,7 @@
-apt update -y
+#!/bin/sh
+#! Do not run this script as sudo
+
+sudo apt update -y
 
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
