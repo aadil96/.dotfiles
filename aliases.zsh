@@ -1,3 +1,6 @@
+# Misc
+alias locker="nohup /usr/bin/bitwarden &"
+
 # dir on linux
 alias dls="cd ~/Downloads"
 alias hstead="cd ~/Development/Homestead"
