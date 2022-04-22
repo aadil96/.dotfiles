@@ -5,7 +5,7 @@ echo "Setting up your linux machine..."
 
 sudo apt update -y
 
-sudo apt install zsh git ca-certificates nginx wget -y
+sudo apt install zsh git ca-certificates nginx wget tree -y
 
 sh ~/.dotfiles/create_dev_dirs.sh
 
