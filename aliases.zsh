@@ -1,5 +1,6 @@
 # Misc
 alias locker="nohup /usr/bin/bitwarden &"
+alias postman="nohup /opt/Postman/app/postman &"
 
 # dir on linux
 alias dls="cd ~/Downloads"

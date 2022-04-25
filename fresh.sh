@@ -13,4 +13,10 @@ sh ~/.dotfiles/install_zsh.sh
 
 sh ~/.dotfiles/install_nvm.sh
 
-sh ~/.dotfiles/install_php.sh
+sh ~/.dotfiles/install_php.sh``
+
+sh ~/.dotfiles/install_composer.sh
+
+composer global require laravel/installer
+
+composer global require "squizlabs/php_codesniffer=*"
