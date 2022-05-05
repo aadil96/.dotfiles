@@ -1,6 +1,6 @@
 # Path to your dotfiles.
 export DOTFILES=$HOME/.dotfiles
-export WORKDIR=$HOME/Development/acetrot
+export WORKDIR=$HOME/Development/weassemble
 export PATH=$PATH:/usr/local/go/bin
 export PATH="/home/aadil/.local/bin:$PATH"
 export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt

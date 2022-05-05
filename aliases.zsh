@@ -1,3 +1,7 @@
+# Misc
+alias locker="nohup /usr/bin/bitwarden &"
+alias postman="nohup /opt/Postman/app/postman &"
+
 # dir on linux
 alias dls="cd ~/Downloads"
 alias hstead="cd ~/Development/Homestead"
@@ -24,6 +28,11 @@ alias guser="git config user.name $1"
 alias gemail="git config user.email $1"
 alias gclone="git clone $1"
 alias gs="git status"
+
+function gclear() {
+	git config --add oh-my-zsh.hide-status 1
+	git config --add oh-my-zsh.hide-dirty 1
+}
 
 # miscellaneous
 alias bright="xrandr --output eDP --brightness $1"

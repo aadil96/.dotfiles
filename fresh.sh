@@ -3,25 +3,20 @@
 
 echo "Setting up your linux machine..."
 
-sudo apt update
+sudo apt update -y
 
-sudo apt install zsh
+sudo apt install zsh git ca-certificates nginx wget tree -y
 
-# Check for Oh My Zsh and install if we don't have it
-if test ! $(which omz); then
-  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
-fi
+sh ~/.dotfiles/create_dev_dirs.sh
 
-chsh -s $(which zsh)
+sh ~/.dotfiles/install_zsh.sh
 
-source ~/.zshrc
+sh ~/.dotfiles/install_nvm.sh
 
-if [ ! -d ~/Development ]
-then 
-	mkdir ~/Development
-fi
+sh ~/.dotfiles/install_php.sh``
 
-if [ ! -d ~/Development/Sites ]
-then 
-	mkdir ~/Development/Sites
-fi
+sh ~/.dotfiles/install_composer.sh
+
+composer global require laravel/installer
+
+composer global require "squizlabs/php_codesniffer=*"
