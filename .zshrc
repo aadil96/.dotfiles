@@ -121,4 +121,3 @@ export NVM_NODEJS_ORG_MIRROR=https://nodejs.org/dist/
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
