@@ -11,10 +11,10 @@ then
 	sudo ln -s ~/.dotfiles/.zshrc ~/aliases.zsh
 	sudo ln -s ~/.dotfiles/.zshrc ~/path.zsh
 	# install zsh autosuggestion plugin
-	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+	#git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
-chsh -s $(which zsh)
+#chsh -s $(which zsh)
 
 zsh
 
