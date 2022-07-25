@@ -2,7 +2,7 @@
 sudo apt install zsh -y
 
 # install ohmyzsh and change default shell to zsh
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 if [ -d $HOME/.dotfiles ]
 then
@@ -13,5 +13,7 @@ then
 	# install zsh autosuggestion plugin
 	git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
+
+chsh -s $(which zsh)
 
 source ~/.zshrc
