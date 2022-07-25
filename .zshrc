@@ -2,15 +2,16 @@
 export DOTFILES=$HOME/.dotfiles
 export WORKDIR=$HOME/Development/weassemble
 export PATH=$PATH:/usr/local/go/bin
-export PATH="/home/aadil/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/aadil/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
+echo $ZSH
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
