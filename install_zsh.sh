@@ -16,4 +16,6 @@ fi
 
 chsh -s $(which zsh)
 
+zsh
+
 source ~/.zshrc

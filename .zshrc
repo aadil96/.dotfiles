@@ -11,7 +11,6 @@ export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-echo $ZSH
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
