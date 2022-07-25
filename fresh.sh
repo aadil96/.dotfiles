@@ -7,13 +7,13 @@ sudo apt update -y
 
 sudo apt install zsh git ca-certificates nginx wget tree -y
 
-sh ~/.dotfiles/create_dev_dirs.sh
+sh $HOME/.dotfiles/create_dev_dirs.sh
 
-sh ~/.dotfiles/install_nvm.sh
+sh $HOME/.dotfiles/install_nvm.sh
 
-sh ~/.dotfiles/install_php.sh``
+sh $HOME/.dotfiles/install_php.sh``
 
-sh ~/.dotfiles/install_composer.sh
+sh $HOME/.dotfiles/install_composer.sh
 
 composer global require laravel/installer
 
