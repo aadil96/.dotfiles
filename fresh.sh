@@ -19,4 +19,8 @@ composer global require laravel/installer
 
 composer global require "squizlabs/php_codesniffer=*"
 
+sudo chmod +x $HOME/.dotfiles/clear-dirty
+
+sudo ln -s $HOME/.dotfiles/clear-dirty /usr/local/bin/
+
 sh ~/.dotfiles/install_zsh.sh
