@@ -47,13 +47,14 @@ alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
 
 # docker
 
-alias dcup="docker-compose up -d"
+alias dcup="docker compose up -d"
 alias dck="docker"
 alias dckps="docker ps"
-alias dclogs="docker-compose logs"
-alias dcbuild="docker-compose build $1"
+alias dclogs="docker compose logs"
+alias dcbuild="docker compose build $1"
 alias dckexec="docker exec -it"
-alias dcdown="docker-compose down"
+alias dcexec="docker compose exec"
+alias dcdown="docker compose down"
 alias dckim="docker images"
 alias dcknikito="docker run --rm sullo/nikto"
 

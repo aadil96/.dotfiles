@@ -12,6 +12,7 @@ export PATH="$PATH:/opt/Postman/app"
 
 export PATH=/usr/bin:$PATH
 
-export DOCKER_HOST=unix:///run/user/1000/docker.sock
+
+#export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 export PATH="$PATH:$HOME/Downloads/PhpStorm-221.6008.16/bin" 
