@@ -16,3 +16,5 @@ export PATH=/usr/bin:$PATH
 #export DOCKER_HOST=unix:///run/user/1000/docker.sock
 
 export PATH="$PATH:$HOME/Downloads/PhpStorm-221.6008.16/bin" 
+export PATH=$PATH:/usr/local/go/bin
+
