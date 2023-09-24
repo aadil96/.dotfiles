@@ -124,3 +124,8 @@ autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 
 eval "$(starship init zsh)"
+
+#source ~/.zplug/init.zsh
+
+# Make sure to use double quotes
+#zplug "zsh-users/zsh-autosuggestions"
