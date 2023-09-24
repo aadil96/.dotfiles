@@ -9,7 +9,7 @@ sudo apt update -y
 
 sudo apt install zip zsh git ca-certificates nginx wget tree -y
 
-sh ~/.dotfiles/create_dev_dirs.sh
+#sh ~/.dotfiles/create_dev_dirs.sh
 
 sh ~/.dotfiles/install_nvm.sh
 
