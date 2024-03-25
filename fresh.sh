@@ -19,10 +19,12 @@ sh ~/.dotfiles/install_composer.sh
 
 composer global require laravel/installer
 
-composer global require "squizlabs/php_codesniffer=*"
+composer global require "squizlabs/php_codesniffer=*" --dev
 
 sudo chmod +x ~/.dotfiles/clear-dirty
 
 sudo ln -s ~/.dotfiles/clear-dirty /usr/local/bin/
+
+sudo /bin/sh ~/.dotfiles/install_starship.sh
 
 sh ~/.dotfiles/install_zsh.sh
