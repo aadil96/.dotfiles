@@ -18,3 +18,5 @@ export PATH=/usr/bin:$PATH
 export PATH="$PATH:$HOME/Downloads/PhpStorm-221.6008.16/bin" 
 export PATH=$PATH:/usr/local/go/bin
 
+#export ansible path
+export PATH="$PATH:/root/.local/bin"

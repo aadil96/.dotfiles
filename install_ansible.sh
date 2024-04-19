@@ -1,3 +1,6 @@
+#!/bin/bash
+if [ "$(id -u)" == 0 ]; then echo "Ansible should be installed as root user." >&2; exit 1; fi
+
 # sudo apt install software-properties-common -y
 
 # sudo apt-add-repository --yes --update ppa:ansible/ansible

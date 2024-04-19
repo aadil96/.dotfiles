@@ -4,6 +4,7 @@ alias postman="nohup /opt/Postman/app/postman &"
 
 # dir on linux
 alias dls="cd ~/Downloads"
+alias sites="cd ~/Development/Sites"
 alias hstead="cd ~/Development/Homestead"
 alias dev="cd ~/Development"
 alias cr="clear"
